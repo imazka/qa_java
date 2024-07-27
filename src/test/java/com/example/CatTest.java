@@ -27,7 +27,7 @@ public class CatTest {
     }
 
     @Test
-    public void testConstructor() {
+    public void testCatConstructor() {
         assertEquals(mockFeline, cat.getPredator());
     }
 

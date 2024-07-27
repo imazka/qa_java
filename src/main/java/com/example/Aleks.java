@@ -1,7 +1,9 @@
 package com.example;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Aleks extends Lion{
     public Aleks(Feline feline) throws Exception {
@@ -9,7 +11,7 @@ public class Aleks extends Lion{
     }
 
     public Map<String, String> getFriends() {
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new LinkedHashMap<>();
         map.put("Зебра","Марти");
         map.put("Бегемотиха","Глория");
         map.put("Жираф","Мелман");

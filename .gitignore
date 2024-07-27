@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 
+/.idea/
+/htmlReport/
+/target/
+
 # Log file
 *.log
 

@@ -21,7 +21,7 @@ public class ParamererizedTests {
             "null, false",
             "тест, false"
     })
-    public void testConstructor(String sex, boolean expectedresultOfMane) {
+    public void testLionConstructor(String sex, boolean expectedresultOfMane) {
 
         try {
             Lion lion = new Lion(sex, mockFeline);
