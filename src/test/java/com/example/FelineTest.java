@@ -16,6 +16,7 @@ public class FelineTest {
 
     @Spy
     Feline felineSpy;
+    Feline feline;
 
     @Test
     public void testEatMeat() throws Exception {
@@ -27,8 +28,9 @@ public class FelineTest {
 
     @Test
     public void testGetFamily() {
+        feline = new Feline();
         String expectedValue = "Кошачьи";
-        assertEquals(expectedValue, felineSpy.getFamily());
+        assertEquals(expectedValue, feline.getFamily());
     }
 
     @Test
@@ -40,7 +42,8 @@ public class FelineTest {
 
     @Test
     public void testGetKittensWithArgument() {
+        feline = new Feline();
         int expectedValue = 1;
-        assertEquals(expectedValue, felineSpy.getKittens(expectedValue));
+        assertEquals(expectedValue, feline.getKittens(expectedValue));
     }
 }
